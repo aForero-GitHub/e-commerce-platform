@@ -33,8 +33,7 @@ export default async function Page({ params: { slug = 'home' } }) {
     })
 
     categories = await fetchDocs<Category>('categories')
-  } catch (error) {
-  }
+  } catch (error) {}
 
   if (!page && slug === 'home') {
     page = staticHome
@@ -90,8 +89,7 @@ export async function generateMetadata({ params: { slug = 'home' } }): Promise<M
       slug,
       draft: isDraftMode,
     })
-  } catch (error) {
-  }
+  } catch (error) {}
 
   if (!page && slug === 'home') {
     page = staticHome
