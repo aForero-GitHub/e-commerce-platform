@@ -1,5 +1,7 @@
 # E-Commerce Project
 
+## Durante los próximos 6 días (a partir del 28/SEP/2024), podrá acceder a este demo funcional en [e-commerce-adforeroma](https://e-commerce-platform.payloadcms.app/).
+
 Este proyecto es un ejercicio de implementación de una plataforma de comercio electrónico con funcionalidades básicas como la gestión de catálogos de productos y la gestión de pedidos. La solución incluye un backend totalmente funcional, un panel de administración y un sitio web bien diseñado y listo para producción.
 
 ## Tecnologías Utilizadas
