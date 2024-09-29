@@ -38,7 +38,7 @@ La solución sigue una arquitectura desplegada en AWS con los siguientes compone
 6. **Integración con APIs Externas**: La aplicación interactúa con Stripe para la gestión de pagos.
 
 ### Diagrama de Arquitectura
-(Adjunta aquí tu diagrama de arquitectura en formato visual)
+![Arquitectura](https://github.com/aForero-GitHub/e-commerce-platform/blob/main/arquitectura.png)
 
 ## Cómo Iniciar el Proyecto Localmente
 
