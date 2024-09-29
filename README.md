@@ -1,7 +1,6 @@
 # E-Commerce Project
 
-## Durante los próximos 6 días (a partir del 28/SEP/2024), podrá acceder a este demo funcional en [e-commerce-adforeroma](https://e-commerce-platform.payloadcms.app/){:target="_blank"}.
-
+## Durante los próximos 6 días (a partir del 28/SEP/2024), podrá acceder a este demo funcional en <a href="https://e-commerce-platform.payloadcms.app/" target="_blank">e-commerce-adforeroma</a>.
 
 Este proyecto es un ejercicio de implementación de una plataforma de comercio electrónico con funcionalidades básicas como la gestión de catálogos de productos y la gestión de pedidos. La solución incluye un backend totalmente funcional, un panel de administración y un sitio web bien diseñado y listo para producción.
 
@@ -157,4 +156,5 @@ Para desplegar la aplicación en un entorno de producción:
 
 - La arquitectura monolítica utilizada facilita el desarrollo rápido y la prueba del proyecto.
 - El proyecto es escalable y se puede migrar a una arquitectura de microservicios si se desea en el futuro.
-- He redactado un breve artículo que podría resultarle de interés para conocer más sobre las tecnologías utilizadas en este proyecto [Andres David Forero Martinez - Linkedin](https://www.linkedin.com/pulse/building-e-commerce-solutions-faster-than-ever-power-forero-martinez-5dsce){:target="_blank"}
+- He redactado un breve artículo que podría resultarle de interés para conocer más sobre las tecnologías utilizadas en este proyecto: <a href="https://www.linkedin.com/pulse/building-e-commerce-solutions-faster-than-ever-power-forero-martinez-5dsce" target="_blank">Andrés David Forero Martínez - LinkedIn</a>.
+
