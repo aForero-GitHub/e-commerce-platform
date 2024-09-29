@@ -8,10 +8,10 @@ Este proyecto es un ejercicio de implementación de una plataforma de comercio e
 
 - **Frontend**: Next.js (React), TypeScript, React Hook Form, SEO Plugin
 - **Backend**: Node.js, Express
-- **Base de Datos**: MongoDB
+- **Base de Datos**: MongoDB alojada en una instancia EC2
 - **Autenticación y Control de Acceso**: Payload CMS
 - **Pago**: Integración con Stripe
-- **Despliegue**: Docker y Docker Compose
+- **Despliegue**: AWS (EC2, S3, Lambda) y Docker para entornos de desarrollo
 - **Gestión de Contenedores**: Docker
 - **Control de Versiones**: Git
 
@@ -28,17 +28,14 @@ Este proyecto es un ejercicio de implementación de una plataforma de comercio e
 
 ## Arquitectura
 
-La solución sigue una arquitectura monolítica basada en Node.js y Next.js, donde todas las funcionalidades están centralizadas en un solo contenedor Docker. Los principales componentes del proyecto son:
+La solución sigue una arquitectura desplegada en AWS con los siguientes componentes:
 
-1. **Frontend**: La aplicación frontend se desarrolló con Next.js y TypeScript. Ofrece la funcionalidad de un e-commerce con capacidad de autenticación, carrito de compras y checkout.
-
-2. **Backend**: El backend está construido sobre Node.js y utiliza Payload CMS para la gestión de contenido y administración de usuarios.
-
-3. **Base de Datos**: MongoDB es la base de datos principal utilizada para almacenar información de productos, pedidos y usuarios.
-
-4. **Servicios de Pago**: La integración con Stripe permite manejar el procesamiento de pagos y sincronizar la información de productos entre Stripe y la aplicación.
-
-5. **Despliegue y Orquestación**: Docker Compose se utiliza para orquestar los contenedores del backend y la base de datos.
+1. **Frontend**: Desarrollado en Next.js y TypeScript, consume servicios del backend y muestra la interfaz de usuario.
+2. **Backend (EC2 + Node.js)**: El backend está alojado en una instancia EC2, gestionando la lógica de negocio y la comunicación con la base de datos MongoDB.
+3. **Base de Datos (MongoDB)**: MongoDB está alojado en una instancia EC2 separada para un almacenamiento eficiente de los datos.
+4. **Almacenamiento de Medios (S3)**: Los archivos de medios se almacenan en un bucket de S3, permitiendo la gestión de activos de manera segura y escalable.
+5. **AWS Lambda**: Maneja operaciones CRUD específicas relacionadas con S3 y proporciona un entorno serverless para manipulación de archivos.
+6. **Integración con APIs Externas**: La aplicación interactúa con Stripe para la gestión de pagos.
 
 ### Diagrama de Arquitectura
 (Adjunta aquí tu diagrama de arquitectura en formato visual)
